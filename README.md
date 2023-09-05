@@ -16,4 +16,4 @@
        
        关于循环展开，展开2次比不展开提升很多，展开次数越多，效果越不明显，感觉展开4次或者8次就差不多了
 
-       ![Image text](https://github.com/caixiao-0725/cuda-course/blob/main/pictures/reduce.png)
+![Image text](https://github.com/caixiao-0725/cuda-course/blob/main/pictures/reduce.png)
