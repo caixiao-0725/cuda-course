@@ -15,3 +15,5 @@
        间域并行比领域并行快了很多，具体原因是啥？ 可能是因为邻域并行的warp里有一般的线程不工作？
        
        关于循环展开，展开2次比不展开提升很多，展开次数越多，效果越不明显，感觉展开4次或者8次就差不多了
+
+       ![Image text](https://github.com/caixiao-0725/cuda-course/blob/main/pictures/reduce.png)
