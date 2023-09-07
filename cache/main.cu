@@ -13,5 +13,18 @@ int main(){
     }
 
     cudaSharedMemConfig SharedMemConfig;
-   
+    cudaDeviceGetSharedMemConfig(&SharedMemConfig);
+    printf("SharedMemConfig = %d\n", SharedMemConfig);
+    if(SharedMemConfig == cudaSharedMemBankSizeEightByte){
+		printf("cudaSharedMemBankSizeEightByte\n");
+	}
+	else if(SharedMemConfig == cudaSharedMemBankSizeFourByte){
+		printf("cudaSharedMemBankSizeFourByte\n");
+	}
+	else if(SharedMemConfig == cudaSharedMemBankSizeDefault){
+		printf("cudaSharedMemBankSizeDefault\n");
+	}
+	else{
+		printf("cudaSharedMemBankSizeInvalid\n");
+	}
 }
